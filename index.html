@@ -2,7 +2,8 @@
     <head>
         <title>web</title>
         <script type="text/javascript">
-            window.onload = function() {
+            function onBtnClick() {
+
                 // var fakeInput = document.createElement('input')
                 // fakeInput.setAttribute('type','text')
 
@@ -13,10 +14,12 @@
 
                 var myInput = document.getElementById('myInput')
                 myInput.focus()
+
             }
         </script>
     </head>
     <body>
+        <input type="button" value="여기 클릭" onclick="onBtnClick()"/>
         <form>
             <input type="text" id="myInput"/>
         </form>
